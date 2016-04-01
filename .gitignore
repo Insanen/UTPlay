@@ -1,0 +1,13 @@
+node_modules/*
+.tmp/*
+.sass-cache/*
+Gruntfile.js
+package.json
+php/*
+js/utplay-dev.js
+css/*
+js/*
+
+src/utplay-dev.min.js
+
+index.html
