@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>UTPlay by Insanen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">UTPlay</h1>
+      <h2 class="project-tagline">YouTube Playlist Player with class!</h2>
+      <a href="https://github.com/Insanen/UTPlay" class="btn">View on GitHub</a>
+      <a href="https://github.com/Insanen/UTPlay/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Insanen/UTPlay/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-utplay" class="anchor" href="#welcome-to-utplay" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to UTPlay.</h3>
+
+<p>YouTube Playlist with class - This simple script will allow you to integrate any YouTube Public Playlist into a CSS3 and Javascript audio player.  YouTube Playlist will allow you to get only the sound out of your videos by hiding the block of the video frame. 
+If your having issues playing your playlist, Please make sure your playlist is not private.</p>
+
+<p><a href="https://github.com/Insanen/UTPlay/issues">Submit a bug</a></p>
+
+<h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h3>
+
+<ul>
+<li>Download files from <code>src</code> folder.</li>
+<li>Include files inside <code>src</code> on your page.
+<code>&lt;link rel="stylesheet" type="text/css" href="src/utplay.min.css"&gt;</code>
+<code>&lt;script src="src/utplay.min.js"&gt;&lt;/script&gt;</code>
+</li>
+</ul>
+
+<h3>
+<a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use it</h3>
+
+<p>Simple, After adding the script dependencies use the html markup to add your player in place.</p>
+
+<pre><code>&lt;iframe id="video" src="//www.youtube.com/embed/?list=This_Is_Your_Id&amp;amp;index=0&amp;amp;listType=playlist&amp;amp;enablejsapi=1&amp;amp;fs=0&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;modestbranding=1&amp;amp;iv_load_policy=3&amp;amp;controls=0&amp;amp;autoplay=0&amp;amp;loop=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+  &lt;div class="buttons"&gt;
+    &lt;a class="myPlayBtn" id="play-button" href="#play-button-shape"&gt; &lt;div class="play"&gt;&lt;/div&gt;&lt;/a&gt;
+    &lt;a class="myPauseBtn" id="pause-button" href="#pause-button-shape"&gt; &lt;div class="pause"&gt;&lt;/div&gt;&lt;/a&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<p>Now this is the only part that gets a bit tricky, You will need to find your YouTube Playlist ID and place it within the HTML markup of Iframe. </p>
+
+<p>For my example, I am going to take a playlist I've created for this project <code>https://www.youtube.com/playlist?list=PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo</code> so my ID for this playlist will be <code>PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo</code>.
+Yes so pretty much everything after <code>playlist?list=This_Is_Your_Id</code>.</p>
+
+<p>After we obtaining our YouTube Playlist ID, We go ahead and plug it inside our iframe markup, like this;</p>
+
+<pre><code>&lt;iframe id="video" src="//www.youtube.com/embed/?list=PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo&amp;amp;index=0&amp;amp;listType=playlist&amp;amp;enablejsapi=1&amp;amp;fs=0&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;modestbranding=1&amp;amp;iv_load_policy=3&amp;amp;controls=0&amp;amp;autoplay=0&amp;amp;loop=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+  &lt;div class="buttons"&gt;
+    &lt;a class="myPlayBtn" id="play-button" href="#play-button-shape"&gt; &lt;div class="play"&gt;&lt;/div&gt;&lt;/a&gt;
+    &lt;a class="myPauseBtn" id="pause-button" href="#pause-button-shape"&gt; &lt;div class="pause"&gt;&lt;/div&gt;&lt;/a&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>In 2016, Nick Rodriguez (<a href="https://github.com/misterzik" class="user-mention">@misterzik</a>), Insanen Team (<a href="https://github.com/insanen" class="user-mention">@insanen</a>), and DevOps Team (<a href="https://github.com/datatransferpw" class="user-mention">@datatransferpw</a>).</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Insanen/UTPlay">UTPlay</a> is maintained by <a href="https://github.com/Insanen">Insanen</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
