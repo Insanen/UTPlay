@@ -1,3 +1,4 @@
+![UTPlay - YouTube Music Player](https://github.com/Insanen/UTPlay/blob/master/UTPlay.png)
 ### Welcome to UTPlay.
 YouTube Playlist with class - This simple script will allow you to integrate any YouTube Public Playlist into a CSS3 and Javascript audio player.  YouTube Playlist will allow you to get only the sound out of your videos by hiding the block of the video frame. 
 If your having issues playing your playlist, Please make sure your playlist is not private.
