@@ -1,0 +1,37 @@
+{
+  "name": "UTPlay",
+  "version": "1.0.0",
+  "description": "YouTube Playlist Player with class!",
+  "main": [
+    "./src/utplay.min.js",
+    "./src/utplay.min.js"],
+  "authors": [
+    "MisterZik"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "YouTube+Playlist",
+    "Youtube+Player",
+    "Youtube",
+    "Player",
+    "YouTube+Api",
+    "Api"
+  ],
+  "moduleType": [],
+  "homepage": "http://insanen.github.io/UTPlay/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json",
+    "php/*",
+    "js/utplay-dev.js",
+    "css/*",
+    "js/*",
+    "src/utplay-dev.min.js"
+
+  ]
+}
