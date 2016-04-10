@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="src/utplay.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background: url(background.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .logo {
+            font-family: 'Lobster', cursive;
+            font-weight: 400;
+            font-size: 46px;
+        }
+
+        .content {
+            background: #B5D5E5;
+            padding: 8px;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div align="center">
+
+        <div class="logo">
+            UTPlay
+        </div>
+        <p> YouTube Playlist Player</p>
+        <br />
+        <br />
+
+        <div align="center">
+            <iframe id="video" name="x" src="//www.youtube.com/embed/?list=PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo&amp;index=0&amp;listType=playlist&amp;enablejsapi=1&amp;fs=0&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;controls=0&amp;autoplay=0&amp;loop=0"
+                frameborder="0" allowfullscreen></iframe>
+
+            <div class="buttons">
+                <a class="myPlayBtn" id="play-button" href="#play-button-shape">
+                    <div class="play"></div>
+                </a>
+                <a class="myPauseBtn" id="pause-button" href="#pause-button-shape">
+                    <div class="pause"></div>
+                </a>
+                <a class="myNxtBtn" id="next-button" href="#next-button-shape">
+                    <div class="nxt"></div>
+                </a>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div align="left" class="content">
+
+            <h3>Welcome to UTPlay.</h3>
+
+            <p>YouTube Playlist with class - This simple script will allow you to integrate any YouTube Public Playlist into a CSS3 and Javascript audio player. YouTube Playlist will allow you to get only the sound out of your videos by hiding the block
+                of the video frame. If your having issues playing your playlist, Please make sure your playlist is not private.</p>
+
+            <p><a href="https://github.com/Insanen/UTPlay/issues" target="_blank">Submit a bug</a> | <a href="http://insanen.github.io/UTPlay/" target="_blank">Read the Official MD</a></p>
+            <h3>Install</h3>
+
+            <ul>
+                <li>Download files from <code>src</code> folder.</li>
+                <li>Include files inside <code>src</code> on your page.
+                    <code>&lt;link rel="stylesheet" type="text/css" href="src/utplay.min.css"&gt;</code>
+                    <code>&lt;script src="src/utplay.min.js"&gt;&lt;/script&gt;</code></li>
+            </ul>
+
+            <h3>How to use it</h3>
+
+            <p>Simple, After adding the script dependencies use the html markup to add your player in place.</p>
+            <textarea style="width:100%; height: 185px;">
+
+                &lt;iframe id="video" src="//www.youtube.com/embed/?list=This_Is_Your_Id&amp;amp;index=0&amp;amp;listType=playlist&amp;amp;enablejsapi=1&amp;amp;fs=0&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;modestbranding=1&amp;amp;iv_load_policy=3&amp;amp;controls=0&amp;amp;autoplay=0&amp;amp;loop=0"
+                frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+                <br />
+                <br /> &lt;div align="center"&gt;
+                <br /> &lt;div class="buttons"&gt;
+                <br /> &lt;a class="myPlayBtn" id="play-button" href="#play-button-shape"&gt; &lt;div class="play"&gt;&lt;/div&gt;&lt;/a&gt;
+                <br /> &lt;a class="myPauseBtn" id="pause-button" href="#pause-button-shape"&gt; &lt;div class="pause"&gt;&lt;/div&gt;&lt;/a&gt;
+                <br /> &lt;a class="myNxtBtn" id="next-button" href="#next-button-shape"&gt; &lt;div class="nxt"&gt;&lt;/div&gt;&lt;/a&gt;
+                <br /> &lt;/div&gt;
+                <br /> &lt;/div&gt;
+
+            </textarea>
+            <p>Now this is the only part that gets a bit tricky, You will need to find your YouTube Playlist ID and place it within the HTML markup of Iframe. </p>
+
+            <p>For my example, I am going to take a playlist I've created for this project <code>https://www.youtube.com/playlist?list=PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo</code> so my ID for this playlist will be <code>PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo</code>.
+                Yes so pretty much everything after <code>playlist?list=This_Is_Your_Id</code>.</p>
+
+            <p>After we obtaining our YouTube Playlist ID, We go ahead and plug it inside our iframe markup, like this;</p>
+
+            <textarea style="width:100%; height: 185px;">
+
+                &lt;iframe id="video" src="//www.youtube.com/embed/?list=PLr7KBbNMX5CTXyY1_GKjHAzrIPJRs6Cpo&amp;amp;index=0&amp;amp;listType=playlist&amp;amp;enablejsapi=1&amp;amp;fs=0&amp;amp;rel=0&amp;amp;showinfo=0&amp;amp;modestbranding=1&amp;amp;iv_load_policy=3&amp;amp;controls=0&amp;amp;autoplay=0&amp;amp;loop=0"
+                frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+                <br />
+                <br /> &lt;div align="center"&gt;
+                <br /> &lt;div class="buttons"&gt;
+                <br /> &lt;a class="myPlayBtn" id="play-button" href="#play-button-shape"&gt; &lt;div class="play"&gt;&lt;/div&gt;&lt;/a&gt;
+                <br /> &lt;a class="myPauseBtn" id="pause-button" href="#pause-button-shape"&gt; &lt;div class="pause"&gt;&lt;/div&gt;&lt;/a&gt;
+                <br /> &lt;a class="myNxtBtn" id="next-button" href="#next-button-shape"&gt; &lt;div class="nxt"&gt;&lt;/div&gt;&lt;/a&gt;
+                <br /> &lt;/div&gt;
+                <br /> &lt;/div&gt;
+
+
+            </textarea>
+
+            <h3>Authors and Contributors</h3>
+
+            <p>In 2016, Nick Rodriguez (@misterzik), Insanen Team (@insanen), and DevOps Team (@datatransferpw).</p>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="src/utplay.min.js"></script>
+
+
+</html>

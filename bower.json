@@ -1,21 +1,23 @@
 {
   "name": "UTPlay",
-  "version": "1.0.0",
-  "description": "YouTube Playlist Player with class!",
+  "version": "1.0.1",
+  "description": "YouTube Playlist with Class - This simple script will allow you to integrate any YouTube Public Playlist.",
   "main": [
     "./src/utplay.min.js",
     "./src/utplay.min.js"],
   "authors": [
-    "MisterZik"
+    "MisterZik",
+    "Insanen",
   ],
   "license": "MIT",
   "keywords": [
+    "UTPlay",
     "YouTube+Playlist",
     "Youtube+Player",
     "Youtube",
     "Player",
     "YouTube+Api",
-    "Api"
+    "Api",
   ],
   "moduleType": [],
   "homepage": "http://insanen.github.io/UTPlay/",
@@ -27,11 +29,9 @@
     "tests",
     "Gruntfile.js",
     "package.json",
-    "php/*",
     "js/utplay-dev.js",
     "css/*",
     "js/*",
-    "src/utplay-dev.min.js"
-
+    "src/utplay-dev.min.js",
   ]
 }
