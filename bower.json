@@ -1,6 +1,6 @@
 {
   "name": "UTPlay",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "YouTube Playlist with Class - This simple script will allow you to integrate any YouTube Public Playlist.",
   "main": [
     "./src/utplay.min.js",
